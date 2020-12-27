@@ -1,0 +1,40 @@
+.data-box {
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #027cb4;
+  position: relative;
+  margin-bottom: 15px;
+  &.noborder {
+    border: none;
+    box-shadow: none;
+  }
+  .in-title {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    color: #fff;
+    padding: 40px 10px 10px 50px;
+    font-size: 22px;
+    font-weight: 500;
+    z-index: 1000;
+    .icon {
+      background: url(../../assets/data/circle.png) no-repeat;
+      background-size: 100% 100%;
+      margin-right: 50px;
+      width: 21px;
+      height: 21px;
+    }
+    span {
+      transform: scaleX(1.15);
+    }
+  }
+  .chart {
+    position: relative;
+    width: 100%;
+    height: calc(100% - 90px);
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}

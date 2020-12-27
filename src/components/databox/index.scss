@@ -1,0 +1,113 @@
+.data-box {
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #027cb4;
+  position: relative;
+  margin-bottom: 15px;
+  &.noborder {
+    border: none;
+    box-shadow: none;
+  }
+  .line-box {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    i {
+      background-color: #00ffff;
+      position: absolute;
+      &.l-t-line {
+        width: 2px;
+        height: 13px;
+        left: -1px;
+        top: -1px;
+      }
+      &.t-l-line {
+        height: 2px;
+        width: 13px;
+        left: -1px;
+        top: -1px;
+      }
+      &.t-r-line {
+        height: 2px;
+        width: 13px;
+        right: -1px;
+        top: -1px;
+      }
+      &.r-t-line {
+        width: 2px;
+        height: 13px;
+        right: -1px;
+        top: -1px;
+      }
+      &.l-b-line {
+        width: 2px;
+        height: 13px;
+        left: -1px;
+        bottom: -1px;
+      }
+      &.b-l-line {
+        height: 2px;
+        width: 13px;
+        left: -1px;
+        bottom: -1px;
+      }
+      &.r-b-line {
+        width: 2px;
+        height: 13px;
+        right: -1px;
+        bottom: -1px;
+      }
+      &.b-r-line {
+        height: 2px;
+        width: 13px;
+        right: -1px;
+        bottom: -1px;
+      }
+    }
+  }
+  .main-title {
+    width: 180px;
+    height: 35px;
+    line-height: 33px;
+    background-color: #2c58a6;
+    border-radius: 18px;
+    position: absolute;
+    text-align: center;
+    top: -17px;
+    left: 50%;
+    margin-left: -90px;
+    color: #fff;
+    font-weight: bold;
+    box-sizing: border-box;
+    z-index: 1000;
+    i {
+      color: fff;
+    }
+  }
+  .in-title {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    color: #fff;
+    padding: 20px 10px 10px 30px;
+    font-weight: 500;
+    z-index: 1000;
+    .icon {
+      background: url(../../assets/data/gradual.png) no-repeat;
+      background-size: 100% 100%;
+      margin-left: 10px;
+      width: 59px;
+      height: 21px;
+    }
+  }
+  .chart {
+    position: relative;
+    width: 100%;
+    height: calc(100% - 64px);
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
