@@ -10,8 +10,7 @@
       <!-- 账号密码登录 -->
 
       <el-form-item label="用户类别">
-        <el-select  v-model="formData.value" placeholder="大区管理员" @change="change">
-          <!--          <el-option v-for="item in options"  :key="item.value" :label="item.label" :value="item.value"></el-option>-->
+        <el-select  v-model="formData.value" placeholder="请选择" @change="change">
           <el-option label="大区管理员" value="1" ></el-option>
           <el-option label="船只操作员" value="2" ></el-option>
         </el-select>
@@ -80,13 +79,7 @@ export default {
   name: "Login",
   data () {
     return {
-      // options: [{
-      //   value: '大区管路员',
-      //   tab:1,
-      // }, {
-      //   value: '船只操作员',
-      //   tab:2,
-      // }],
+
       screatType: false,
       phoneType: true,
       msgText: "发送验证码",

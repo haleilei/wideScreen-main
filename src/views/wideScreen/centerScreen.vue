@@ -54,10 +54,6 @@ export default {
       let ref = this.$refs.faultTree; // 截图区域
       html2canvas(ref, {
         backgroundColor: "#142E48",
-        // useCORS: true, //支持图片跨域
-        // scale: 1, //设置放大的倍数
-        // height: document.getElementById('dialog').scrollHeight,
-        // windowHeight: document.getElementById('dialog').scrollHeight
       }).then(canvas => {
             let dataURL = canvas.toDataURL("image/png");
             this.dataURL = dataURL;
@@ -67,9 +63,6 @@ export default {
             creatDom.download= "截图成功了哟";
             creatDom.click();
           })
-          // .catch(function (error) {
-          //   console.log(error)
-          // })
     },
 
     getShipList: function () {
